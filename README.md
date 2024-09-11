@@ -25,10 +25,17 @@ cd $HOME
 rm t3rn.sh; wget -O t3rn.sh https://raw.githubusercontent.com/dante4rt/Ramanode-Guides/main/T3rn/install.sh && chmod +x t3rn.sh && ./t3rn.sh
 ```
 - When prompted, choose:
-1. Network: testnet
-2. Chains: arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn
-3. Custom RPC: no
+1. Network:
+   ```Bash
+   testnet
+   ```
+3. Chains:
+   ```Bash
+   arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn
+   ```
+5. Custom RPC: (yes/no): n
 ## ✅ You're done! ⭐️
+----------------------------------------------------------------------------------------------------
 
 ### How to install:
 - Create a new screen session by running:
