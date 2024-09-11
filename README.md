@@ -7,9 +7,9 @@
 - Base sepolia:
 [Bridge](https://superbridge.app/base-sepolia)
 - Blast sepolia:
----ERROR
+[Faucet](https://blastapi.io/faucets/blastl2-testnet)
 - Faucet BRN Token:
-[Link](https://faucet.brn.t3rn.io/)
+[Faucet](https://faucet.brn.t3rn.io/)
 ### Update to version 0.21.0:
 - Enter the screen session with:
 ```Bash
