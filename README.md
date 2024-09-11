@@ -1,6 +1,5 @@
 # T3RN Executors Node 
-
-Need 0.1 ETH Testnet on each of these networks and BRN Token
+### Need 0.1 ETH Testnet on each of these networks and BRN Token
 - Arbitrum sepolia:
 [Bridge](https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia)
 - Optimism sepolia:
@@ -11,7 +10,25 @@ Need 0.1 ETH Testnet on each of these networks and BRN Token
 ---ERROR
 - Faucet BRN Token:
 [Link](https://faucet.brn.t3rn.io/)
-
+### Update to version 0.21.0:
+- Enter the screen session with:
+```Bash
+screen -r executor
+```
+- Stop it with Ctrl + C
+- Go to your home directory:
+```Bash
+cd $HOME
+```
+- Run the following commands:
+```Bash
+rm t3rn.sh; wget -O t3rn.sh https://raw.githubusercontent.com/dante4rt/Ramanode-Guides/main/T3rn/install.sh && chmod +x t3rn.sh && ./t3rn.sh
+```
+- When prompted, choose:
+1. Network: testnet
+2. Chains: arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn
+3. Custom RPC: no
+## ✅ You're done! ⭐️
 
 ### How to install:
 - Create a new screen session by running:
