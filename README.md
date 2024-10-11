@@ -15,7 +15,7 @@
 ```Bash
 sudo apt update && sudo apt upgrade -y && sudo apt install screen
 ```
-### 2. Download Binary:
+### 2. Download Binary (v0.21.6):
 ```Bash
 git clone https://github.com/ToanBm/t3rn-executors-node.git && cd t3rn-executors-node
 ```
