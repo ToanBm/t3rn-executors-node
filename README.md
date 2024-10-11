@@ -10,19 +10,22 @@
 [Faucet](https://blastapi.io/faucets/blastl2-testnet)
 - Faucet BRN Token:
 [Faucet](https://faucet.brn.t3rn.io/)
-### Update to version 0.21.0:
-- Enter the screen session with:
+
+### 1. Update the System:
 ```Bash
-screen -r executor
+sudo apt update && sudo apt upgrade -y && sudo apt install screen
 ```
-- Stop it with Ctrl + C
-- Go to your home directory:
+### 2. Download Binary:
 ```Bash
-cd $HOME
+git clone https://github.com/ToanBm/t3rn-executors-node.git && cd t3rn-executors-node
 ```
-- Run the following commands:
+### 3. Start a new Screen Session:
 ```Bash
-rm t3rn.sh; wget -O t3rn.sh https://raw.githubusercontent.com/dante4rt/Ramanode-Guides/main/T3rn/install.sh && chmod +x t3rn.sh && ./t3rn.sh
+screen -S executor
+```
+### 4. Run Setup:
+```Bash
+chmod +x setup.sh && ./setup.sh
 ```
 - When prompted, choose:
 1. Network:
@@ -35,27 +38,13 @@ rm t3rn.sh; wget -O t3rn.sh https://raw.githubusercontent.com/dante4rt/Ramanode-
    ```
 5. Custom RPC: (yes/no): n
 ## ✅ You're done! ⭐️
-----------------------------------------------------------------------------------------------------
-
-### How to install:
-- Create a new screen session by running:
-```Bash
-screen -S executor
-```
-- Download and execute the installer script:
-```Bash
-wget -O tern.sh https://raw.githubusercontent.com/dante4rt/Ramanode-Guides/main/T3rn/install.sh && chmod +x tern.sh && ./tern.sh
-```
-### When prompted, choose:
-1. Network: testnet
-2. Chains: arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn
-3. Custom RPC: n + Enter
-
 To exit the screen session, press Ctrl A+D
 To login the screen session
 ```Bash
 screen -r executor
 ```
+### Thank you
+
 
 
 
