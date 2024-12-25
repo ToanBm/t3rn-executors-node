@@ -1,4 +1,51 @@
 # T3RN Executors Node 
+```Bash
+sudo apt update
+sudo apt install build-essential
+sudo apt install git -y
+```
+```Bash
+screen -S t3rn
+```
+```Bash
+wget https://github.com/t3rn/executor-release/releases/download/v0.31.0/executor-linux-v0.31.0.tar.gz
+```
+```Bash
+tar -xvzf executor-linux-v0.31.0.tar.gz
+```
+```Bash
+cd executor/executor/bin
+```
+## Edit `xxxxxxxxx` by your info
+```Bash
+export NODE_ENV=testnet
+export LOG_LEVEL=debug
+export LOG_PRETTY=false
+export EXECUTOR_PROCESS_ORDERS=true
+export EXECUTOR_PROCESS_CLAIMS=true
+export RPC_ENDPOINTS_L1RN='https://brn.rpc.caldera.xyz/'
+
+export PRIVATE_KEY_LOCAL=xxxxxxxxx
+
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
+export RPC_ENDPOINTS_ARBT='https://arb-sepolia.g.alchemy.com/v2/xxxxxxxxx'
+export RPC_ENDPOINTS_BSSP='https://base-sepolia.g.alchemy.com/v2/xxxxxxxxx'
+export RPC_ENDPOINTS_BLSS='https://blast-sepolia.g.alchemy.com/v2/xxxxxxxxx'
+export RPC_ENDPOINTS_OPSP='https://opt-sepolia.g.alchemy.com/v2/xxxxxxxxx'
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+export EXECUTOR_MAX_L3_GAS_PRICE=100
+```
+```Bash
+./executor
+```
+## ✅ You're done! ⭐️
+To exit the screen session, press Ctrl A+D
+To login the screen session
+```Bash
+screen -r t3rn
+```
+
+
 ### Need 0.1 ETH Testnet on each of these networks and BRN Token
 - Arbitrum sepolia:
 [Bridge](https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia)
