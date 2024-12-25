@@ -40,6 +40,7 @@ export EXECUTOR_MAX_L3_GAS_PRICE=100
 ```
 ## ✅ You're done! ⭐️
 To exit the screen session, press Ctrl A+D
+
 To login the screen session
 ```Bash
 screen -r t3rn
