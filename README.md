@@ -58,7 +58,7 @@ To login the screen session
 screen -r t3rn
 ```
 
-
+------------------------------------------------------------------------------------------------------------------------
 ### Need 0.1 ETH Testnet on each of these networks and BRN Token
 - Arbitrum sepolia:
 [Bridge](https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia)
