@@ -1,4 +1,16 @@
 # T3RN Executors Node 
+## Stop node!
+```Bash
+sudo systemctl stop t3rn-executor.service
+```
+```Bash
+sudo systemctl disable t3rn-executor.service
+```
+```Bash
+sudo screen -S t3rn -X quit
+rm -rf executor
+```
+
 ```Bash
 sudo apt update
 sudo apt install build-essential
