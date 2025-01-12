@@ -1,4 +1,5 @@
 # T3RN Executors Node 
+## Update v0.33.0
 ## Stop node!
 ```Bash
 sudo systemctl stop t3rn-executor.service
@@ -20,10 +21,10 @@ sudo apt install git -y
 screen -S t3rn
 ```
 ```Bash
-wget https://github.com/t3rn/executor-release/releases/download/v0.32.0/executor-linux-v0.32.0.tar.gz
+wget https://github.com/t3rn/executor-release/releases/download/v0.33.0/executor-linux-v0.33.0.tar.gz
 ```
 ```Bash
-tar -xvzf executor-linux-v0.32.0.tar.gz
+tar -xvzf executor-linux-v0.33.0.tar.gz
 ```
 ```Bash
 cd executor/executor/bin
@@ -45,7 +46,7 @@ export RPC_ENDPOINTS_BSSP='https://base-sepolia.g.alchemy.com/v2/xxxxxxxxx'
 export RPC_ENDPOINTS_BLSS='https://blast-sepolia.g.alchemy.com/v2/xxxxxxxxx'
 export RPC_ENDPOINTS_OPSP='https://opt-sepolia.g.alchemy.com/v2/xxxxxxxxx'
 export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
-export EXECUTOR_MAX_L3_GAS_PRICE=1000
+export EXECUTOR_MAX_L3_GAS_PRICE=500
 ```
 ```Bash
 ./executor
