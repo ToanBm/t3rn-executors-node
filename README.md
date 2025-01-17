@@ -46,7 +46,7 @@ export RPC_ENDPOINTS_BSSP='https://base-sepolia.g.alchemy.com/v2/xxxxxxxxx'
 export RPC_ENDPOINTS_BLSS='https://blast-sepolia.g.alchemy.com/v2/xxxxxxxxx'
 export RPC_ENDPOINTS_OPSP='https://opt-sepolia.g.alchemy.com/v2/xxxxxxxxx'
 export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
-export EXECUTOR_MAX_L3_GAS_PRICE=500
+export EXECUTOR_MAX_L3_GAS_PRICE=1000
 ```
 ```Bash
 ./executor
