@@ -21,10 +21,10 @@ sudo apt install git -y
 screen -S t3rn
 ```
 ```Bash
-wget https://github.com/t3rn/executor-release/releases/download/v0.38.0/executor-linux-v0.38.0.tar.gz
+wget https://github.com/t3rn/executor-release/releases/download/v0.47.0/executor-linux-v0.47.0.tar.gz
 ```
 ```Bash
-tar -xvzf executor-linux-v0.38.0.tar.gz
+tar -xvzf executor-linux-v0.47.0.tar.gz
 ```
 ```Bash
 cd executor/executor/bin
