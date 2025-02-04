@@ -1,5 +1,5 @@
 # T3RN Executors Node 
-## Update v0.38.0
+## Update v0.47.0
 ## Stop node!
 ```Bash
 sudo systemctl stop t3rn-executor.service
