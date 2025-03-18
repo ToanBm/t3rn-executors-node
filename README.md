@@ -31,22 +31,25 @@ cd executor/executor/bin
 ```
 ## Edit `xxxxxxxxx` by your info
 ```Bash
-export NODE_ENV=testnet
+export ENVIRONMENT=testnet
 export LOG_LEVEL=debug
 export LOG_PRETTY=false
 export EXECUTOR_PROCESS_ORDERS=true
 export EXECUTOR_PROCESS_CLAIMS=true
-export RPC_ENDPOINTS_L1RN='https://brn.rpc.caldera.xyz/'
-
-export PRIVATE_KEY_LOCAL=xxxxxxxxx
-
-export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
-export RPC_ENDPOINTS_ARBT='https://arb-sepolia.g.alchemy.com/v2/xxxxxxxxx'
-export RPC_ENDPOINTS_BSSP='https://base-sepolia.g.alchemy.com/v2/xxxxxxxxx'
-export RPC_ENDPOINTS_BLSS='https://blast-sepolia.g.alchemy.com/v2/xxxxxxxxx'
-export RPC_ENDPOINTS_OPSP='https://opt-sepolia.g.alchemy.com/v2/xxxxxxxxx'
-export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+export PRIVATE_KEY_LOCAL=YOUR-PRIVATE-KEY
+export ENABLED_NETWORKS='base-sepolia,optimism-sepolia,l2rn,blast-sepolia,arb-sepolia'
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=true
+export EXECUTOR_PROCESS_ORDERS_API_ENABLED=false
+export EXECUTOR_ENABLE_BATCH_BIDING=true
+export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_MAX_L3_GAS_PRICE=1000
+export RPC_ENDPOINTS='{
+"l2rn": ["https://b2n.rpc.caldera.xyz/http"],
+"arbt": ["https://arbitrum-sepolia.drpc.org/", "https://sepolia-rollup.arbitrum.io/rpc"],
+"bast": ["https://base-sepolia-rpc.publicnode.com/", "https://base-sepolia.drpc.org/"],
+"opst": ["https://sepolia.optimism.io/", "https://optimism-sepolia.drpc.org/"],
+"unit": ["https://unichain-sepolia.drpc.org/", "https://sepolia.unichain.org/"]
+}'
 ```
 ```Bash
 ./executor
