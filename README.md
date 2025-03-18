@@ -1,6 +1,6 @@
-# T3RN Executors Node 
+# T3RN Executors Node (Testnet V2)
 ## Update v0.48.0
-## Stop node!
+## Stop old node!
 ```Bash
 sudo systemctl stop t3rn-executor.service
 ```
@@ -21,10 +21,10 @@ sudo apt install git -y
 screen -S t3rn
 ```
 ```Bash
-wget https://github.com/t3rn/executor-release/releases/download/v0.48.0/executor-linux-v0.48.0.tar.gz
+wget https://github.com/t3rn/executor-release/releases/download/v0.48.0/executor-linux-v0.53.1.tar.gz
 ```
 ```Bash
-tar -xvzf executor-linux-v0.48.0.tar.gz
+tar -xvzf executor-linux-v0.53.1.tar.gz
 ```
 ```Bash
 cd executor/executor/bin
