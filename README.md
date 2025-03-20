@@ -3,28 +3,20 @@
 ## Stop old node!
 ```Bash
 sudo systemctl stop t3rn-executor.service
-```
-```Bash
 sudo systemctl disable t3rn-executor.service
 ```
 ```Bash
 sudo screen -S t3rn -X quit
 rm -rf executor
 ```
-
-```Bash
-sudo apt update
-sudo apt install build-essential
-sudo apt install git -y
-```
 ```Bash
 screen -S t3rn
 ```
 ```Bash
-wget https://github.com/t3rn/executor-release/releases/download/v0.53.1/executor-linux-v0.53.1.tar.gz
+wget https://github.com/t3rn/executor-release/releases/download/v0.56.0/executor-linux-v0.56.0.tar.gz
 ```
 ```Bash
-tar -xvzf executor-linux-v0.53.1.tar.gz
+tar -xvzf executor-linux-v0.56.0.tar.gz
 ```
 ```Bash
 cd executor/executor/bin
