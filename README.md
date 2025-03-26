@@ -1,5 +1,5 @@
 # T3RN Executors Node (Testnet V2)
-## Update v0.53.1
+## Update v0.59.0
 ## Stop old node!
 ```Bash
 sudo systemctl stop t3rn-executor.service
@@ -13,10 +13,10 @@ rm -rf executor
 screen -S t3rn
 ```
 ```Bash
-wget https://github.com/t3rn/executor-release/releases/download/v0.53.1/executor-linux-v0.53.1.tar.gz
+wget https://github.com/t3rn/executor-release/releases/download/v0.59.0/executor-linux-v0.59.0.tar.gz
 ```
 ```Bash
-tar -xvzf executor-linux-v0.53.1.tar.gz
+tar -xvzf executor-linux-v0.59.0.tar.gz
 ```
 ```Bash
 cd executor/executor/bin
@@ -29,7 +29,7 @@ export LOG_PRETTY=false
 export EXECUTOR_PROCESS_ORDERS=true
 export EXECUTOR_PROCESS_CLAIMS=true
 export PRIVATE_KEY_LOCAL=YOUR-PRIVATE-KEY
-export ENABLED_NETWORKS='base-sepolia,optimism-sepolia,l2rn,blast-sepolia,arb-sepolia'
+export ENABLED_NETWORKS='base-sepolia,optimism-sepolia,l2rn,unichain-sepolia,arb-sepolia'
 export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=true
 export EXECUTOR_PROCESS_ORDERS_API_ENABLED=false
 export EXECUTOR_ENABLE_BATCH_BIDING=true
