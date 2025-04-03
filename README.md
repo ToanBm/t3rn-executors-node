@@ -1,5 +1,5 @@
 # T3RN Executors Node (Testnet V2)
-## Update v0.59.0
+## Update v0.61.0
 ## Stop old node!
 ```Bash
 sudo systemctl stop t3rn-executor.service
@@ -13,10 +13,10 @@ rm -rf executor
 screen -S t3rn
 ```
 ```Bash
-wget https://github.com/t3rn/executor-release/releases/download/v0.59.0/executor-linux-v0.59.0.tar.gz
+wget https://github.com/t3rn/executor-release/releases/download/v0.61.0/executor-linux-v0.61.0.tar.gz
 ```
 ```Bash
-tar -xvzf executor-linux-v0.59.0.tar.gz
+tar -xvzf executor-linux-v0.61.0.tar.gz
 ```
 ```Bash
 cd executor/executor/bin
@@ -36,7 +36,7 @@ export EXECUTOR_ENABLE_BATCH_BIDING=true
 export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_MAX_L3_GAS_PRICE=1000
 export RPC_ENDPOINTS='{
-"l2rn": ["https://b2n.rpc.caldera.xyz/http"],
+"l2rn": ["https://b2n.rpc.caldera.xyz/http", "https://b2n-testnet.blockpi.network/v1/rpc/public"],
 "arbt": ["https://arbitrum-sepolia.drpc.org/", "https://sepolia-rollup.arbitrum.io/rpc"],
 "bast": ["https://base-sepolia-rpc.publicnode.com/", "https://base-sepolia.drpc.org/"],
 "opst": ["https://sepolia.optimism.io/", "https://optimism-sepolia.drpc.org/"],
