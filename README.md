@@ -19,6 +19,9 @@ wget https://github.com/t3rn/executor-release/releases/download/v0.61.0/executor
 tar -xvzf executor-linux-v0.61.0.tar.gz
 ```
 ```Bash
+rm -f executor-linux-*.tar.gz*
+```
+```Bash
 cd executor/executor/bin
 ```
 ## Edit `xxxxxxxxx` by your info
