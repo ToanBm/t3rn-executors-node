@@ -13,10 +13,10 @@ rm -rf executor
 screen -S t3rn
 ```
 ```Bash
-wget https://github.com/t3rn/executor-release/releases/download/v0.61.0/executor-linux-v0.61.0.tar.gz
+wget https://github.com/t3rn/executor-release/releases/download/v0.62.0/executor-linux-v0.62.0.tar.gz
 ```
 ```Bash
-tar -xvzf executor-linux-v0.61.0.tar.gz
+tar -xvzf executor-linux-v0.62.0.tar.gz
 ```
 ```Bash
 rm -f executor-linux-*.tar.gz*
